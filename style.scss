@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+}
+
+body{
+    background-image:url(images/background.jpg);
+    min-height: 100vh;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100px;
+    padding: 0 1%;
+}
+
+.calculator{
+    max-width: 500px;
+    background:#fff;
+    border-radius: 10px;
+    padding: 2% 3%;
+    
+    h1{
+        padding-bottom: 1rem;
+    }
+
+    .inflation-div{
+        display: flex;
+        margin-bottom: 1rem;
+        padding-bottom: 4%;
+        border-bottom: 1px solid rgba(0,0,0,.5);
+
+
+        input{
+            width: 100px;
+            margin: 0 1rem;
+            padding: 0 1%;
+        }
+    }
+
+    .calculate-div{
+        line-height: 2rem;
+        margin-bottom: 1rem;
+
+        #money,#years{
+            margin-left: 0;
+        }
+    }
+
+    #calculateBtn{
+        padding: 1% 2.2%;
+        cursor:pointer;
+        background:#213924;
+        color:#7f6b10;
+        border-radius: 4px;
+        border: none;
+        outline:none;
+        transition:all .2s ease;
+        letter-spacing: 2px;
+
+        &:hover{
+            box-shadow: 3px 3px 4px rgba(0,0,0,.5);
+        }
+    }
+
+    .result{
+        margin-top: 1rem;
+        font-weight: normal;  
+        text-shadow: 1px 2px 2px rgba(0,0,0,.5);
+        display: none;
+    }
+}
